@@ -9,11 +9,11 @@ const generateTeam = (team) => {
     <h1>${manager.name}</h1>
     <ul>
       <li>${manager.id}</li>
-      <l1>${manager.email}</li>
+      <l1> <span id="email"><a href="mailto:${manager.email}">${manager.email}</a><span></li>
       <li>${manager.officeNumber}</li>
     </ul>
   `;
-  html.push(managerhtml);
+  html.push(managerHtml);
   }
   const generateEngineer = engineer => {
     console.log(engineer);
@@ -21,7 +21,7 @@ const generateTeam = (team) => {
     <h1>${engineer.name}</h1>
     <ul>
       <li>${engineer.id}</li>
-      <l1>${engineer.email}</li>
+      <l1><span id="email"><a href="mailto:${engineer.email}">${engineer.email}</a><span></li>
       <li>${engineer.githubInput}</li>
     </ul>
     `;
@@ -33,7 +33,7 @@ const generateTeam = (team) => {
     <h1>${intern.name}</h1>
     <ul>
       <li>${intern.id}</li>
-      <l1>${intern.email}</li>
+      <l1><span id="email"><a href="mailto:${intern.email}">${intern.email}</a><span></li>
       <li>${intern.githubInput}</li>
     </ul>
     `;
@@ -75,7 +75,6 @@ module.exports = team => {
       </header>
       <main> ${generateTeam(team)} </main>
       <footer class="container text-center py-3">
-        <h3 class="text-dark">&copy; ${new Date().getFullYear()} by ${header.name}</h3>
       </footer>
     </body>
     </html>
