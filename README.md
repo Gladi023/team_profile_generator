@@ -4,8 +4,6 @@ Installation
 Usage
 Video Link
 License
-
-
 ## Installation
 The team_profile_generator requires installation of Node.js. Users must also have access to a code editor with access to the terminal or access to GitBash/Command Line Interface to run Node. Inquirer npm must also be installed by running the command node install in the terminal.
 ## Usage
@@ -15,7 +13,7 @@ https://gladi023.github.io/team_profile_generator/
 https://drive.google.com/file/d/1-i36I8p_eackmyKlTOrYx5RZxxdBxPhB/view
 
 ## License
-MIT License
+MIT License 
 
 Copyright (c) [2022] [Gladimar]
 
