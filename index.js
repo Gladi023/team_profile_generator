@@ -1,16 +1,18 @@
-const Manager = require("./lib/Manager");
-const Engineer = require("./lib/Engineer");
-const Intern = require("./lib/Intern");
+
 const inquirer = require("inquirer");
 const generateSite = require('./src/generate-site');
 const path = require("path");
 const fs = require("fs");
+const Manager = require("./lib/Manager");
+const Engineer = require("./lib/Engineer");
+const Intern = require("./lib/Intern");
 
 const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 //const outputStyling = path.join(OUTPUT_DIR, "style.css");
 //const styleDir = path.resolve(__dirname, "./style");
 //const cssOnPage = fs.readFileSync(path.resolve(styleDir, "style.css"), "utf8");
+
 const teamMembers = [];
 
 const promptManager = () => {
@@ -246,6 +248,8 @@ if (!fs.existsSync(OUTPUT_DIR)) {
 fs.writeFileSync(outputPath, generateSite(teamMembers), "utf-8");
 }
 promptManager();
+
+
 
 ////////////////////////////////////////
 ///////////////////////////////////////
